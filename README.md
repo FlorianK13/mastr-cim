@@ -16,3 +16,6 @@ This repository transforms German energy data from the [Marktstammdatenregister 
 ## Output
 
 The transformation produces `WindGeneratingUnits.csv` containing CIM-formatted wind generating unit data in csv format together with a json context metadata file.
+
+## License
+The original Marktstammdatenregister from Bundesnetzagentur für Elektrizität, Gas, Telekommunikation, Post und Eisenbahnen is licensed under [Datenlizenz Deutschland – Namensnennung – Version 2.0](https://www.govdata.de/dl-de/by-2-0).
