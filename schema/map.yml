@@ -1,0 +1,27 @@
+class_derivations:
+  WindGeneratingUnit:
+    populated_from: wind_extended
+    slot_derivations:
+      mRID:
+        populated_from: EinheitMastrNummer
+      maxOperatingP:
+        populated_from: Nettonennleistung
+        unit_conversion:
+          target_unit: W
+      aggregate:
+        description: "Every entry in MaStR is a single Power Generating Unit."
+        value: False
+        range: boolean  
+      name:
+        range: string
+        expr: "{NameWindpark} + ', ' + {Hersteller} + ', ' + {Typenbezeichnung}"
+      normallyInService:
+        range: boolean
+        expr: "True if EinheitBetriebsstatus=='In Betrieb' else False"
+      xPosition:
+        range: string
+        populated_from: Laengengrad
+      yPosition:
+        range: string
+        populated_from: Breitengrad
+

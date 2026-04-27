@@ -1,0 +1,2536 @@
+name: test-schema
+id: http://example.org/test-schema
+default_prefix: http://example.org/test-schema/
+classes:
+  additional_data_requested:
+    attributes:
+      id:
+        identifier: true
+        range: integer
+      EinheitMastrNummer:
+        range: string
+      additional_data_id:
+        range: string
+      technology:
+        range: string
+      data_type:
+        range: string
+      request_date:
+        range: string
+  additional_locations_requested:
+    attributes:
+      id:
+        identifier: true
+        range: integer
+      LokationMastrNummer:
+        range: string
+      location_type:
+        range: string
+      request_date:
+        range: string
+  balancing_area:
+    attributes:
+      Id:
+        identifier: true
+        range: integer
+      Yeic:
+        range: string
+      RegelzoneNetzanschlusspunkt:
+        range: string
+      BilanzierungsgebietNetzanschlusspunkt:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+  basic_units:
+    attributes:
+      EinheitMastrNummer:
+        identifier: true
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      Name:
+        range: string
+      Einheitart:
+        range: string
+      Einheittyp:
+        range: string
+      Standort:
+        range: string
+      Bruttoleistung:
+        range: float
+      Erzeugungsleistung:
+        range: float
+      EinheitBetriebsstatus:
+        range: string
+      Anlagenbetreiber:
+        range: string
+      EegMastrNummer:
+        range: string
+      KwkMastrNummer:
+        range: string
+      SpeMastrNummer:
+        range: string
+      GenMastrNummer:
+        range: string
+      BestandsanlageMastrNummer:
+        range: string
+      NichtVorhandenInMigriertenEinheiten:
+        range: string
+      EinheitSystemstatus:
+        range: string
+  biomass_eeg:
+    attributes:
+      InstallierteLeistung:
+        range: float
+      AusschliesslicheVerwendungBiomasse:
+        range: string
+      Zuschlagsnummer:
+        range: string
+      BiogasInanspruchnahmeFlexiPraemie:
+        range: string
+      BiogasDatumInanspruchnahmeFlexiPraemie:
+        range: string
+      BiogasLeistungserhoehung:
+        range: string
+      BiogasDatumLeistungserhoehung:
+        range: string
+      BiogasUmfangLeistungserhoehung:
+        range: float
+      BiogasGaserzeugungskapazitaet:
+        range: float
+      Hoechstbemessungsleistung:
+        range: float
+      BiomethanErstmaligerEinsatz:
+        range: string
+      AnlageBetriebsstatus:
+        range: string
+      BiogasGaserzeugungskapazitaet_nv:
+        range: string
+      BiomethanErstmaligerEinsatz_nv:
+        range: string
+      Registrierungsdatum:
+        range: string
+      EegMastrNummer:
+        identifier: true
+        range: string
+      Meldedatum:
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      EegInbetriebnahmedatum:
+        range: string
+      VerknuepfteEinheit:
+        range: string
+      AnlagenschluesselEeg:
+        range: string
+      AusschreibungZuschlag:
+        range: string
+      AnlagenkennzifferAnlagenregister:
+        range: string
+      AnlagenkennzifferAnlagenregister_nv:
+        range: string
+      Netzbetreiberzuordnungen:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+  biomass_extended:
+    attributes:
+      Hauptbrennstoff:
+        range: string
+      Biomasseart:
+        range: string
+      Technologie:
+        range: string
+      EegMastrNummer:
+        range: string
+      KwkMastrNummer:
+        range: string
+      NetzbetreiberMastrNummer:
+        range: string
+      Registrierungsdatum:
+        range: string
+      EinheitMastrNummer:
+        identifier: true
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      LokationMastrNummer:
+        range: string
+      NetzbetreiberpruefungStatus:
+        range: string
+      NetzbetreiberpruefungDatum:
+        range: string
+      AnlagenbetreiberMastrNummer:
+        range: string
+      Land:
+        range: string
+      Bundesland:
+        range: string
+      Landkreis:
+        range: string
+      Gemeinde:
+        range: string
+      Gemeindeschluessel:
+        range: string
+      Postleitzahl:
+        range: string
+      Gemarkung:
+        range: string
+      FlurFlurstuecknummern:
+        range: string
+      Strasse:
+        range: string
+      StrasseNichtGefunden:
+        range: string
+      Hausnummer:
+        range: string
+      HausnummerNichtGefunden:
+        range: string
+      Adresszusatz:
+        range: string
+      Ort:
+        range: string
+      Laengengrad:
+        range: float
+      Breitengrad:
+        range: float
+      UtmZonenwert:
+        range: string
+      UtmEast:
+        range: float
+      UtmNorth:
+        range: float
+      GaussKruegerHoch:
+        range: float
+      GaussKruegerRechts:
+        range: float
+      Meldedatum:
+        range: string
+      GeplantesInbetriebnahmedatum:
+        range: string
+      Inbetriebnahmedatum:
+        range: string
+      DatumEndgueltigeStilllegung:
+        range: string
+      DatumBeginnVoruebergehendeStilllegung:
+        range: string
+      DatumBeendigungVorlaeufigenStilllegung:
+        range: string
+      DatumWiederaufnahmeBetrieb:
+        range: string
+      EinheitSystemstatus:
+        range: string
+      EinheitBetriebsstatus:
+        range: string
+      BestandsanlageMastrNummer:
+        range: string
+      NichtVorhandenInMigriertenEinheiten:
+        range: string
+      AltAnlagenbetreiberMastrNummer:
+        range: string
+      DatumDesBetreiberwechsels:
+        range: string
+      DatumRegistrierungDesBetreiberwechsels:
+        range: string
+      NameStromerzeugungseinheit:
+        range: string
+      Weic:
+        range: string
+      WeicDisplayName:
+        range: string
+      Kraftwerksnummer:
+        range: string
+      Energietraeger:
+        range: string
+      Bruttoleistung:
+        range: float
+      Nettonennleistung:
+        range: float
+      AnschlussAnHoechstOderHochSpannung:
+        range: string
+      Schwarzstartfaehigkeit:
+        range: string
+      Inselbetriebsfaehigkeit:
+        range: string
+      Einsatzverantwortlicher:
+        range: string
+      FernsteuerbarkeitNb:
+        range: string
+      FernsteuerbarkeitDv:
+        range: string
+      FernsteuerbarkeitDr:
+        range: string
+      Einspeisungsart:
+        range: string
+      PraequalifiziertFuerRegelenergie:
+        range: string
+      GenMastrNummer:
+        range: string
+      Netzbetreiberzuordnungen:
+        range: string
+      ReserveartNachDemEnWG:
+        range: string
+      DatumUeberfuehrungInReserve:
+        range: string
+      Hausnummer_nv:
+        range: string
+      Weic_nv:
+        range: string
+      Kraftwerksnummer_nv:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+      NetzreserveZugeordnet:
+        range: string
+      InbetriebnahmedatumAmAktuellenStandort:
+        range: string
+      KapazitaetsreserveZugeordnet:
+        range: string
+  changed_dso_assignment:
+    attributes:
+      EinheitMastrNummer:
+        identifier: true
+        range: string
+      LokationMastrNummer:
+        range: string
+      NetzanschlusspunktMastrNummer:
+        range: string
+      NetzbetreiberMastrNummerNeu:
+        range: string
+      NetzbetreiberMastrNummerAlt:
+        range: string
+      ArtDerAenderung:
+        range: string
+      RegistrierungsdatumNetzbetreiberzuordnungsaenderung:
+        range: string
+      Netzbetreiberzuordnungsaenderungsdatum:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+  combustion_extended:
+    attributes:
+      NameKraftwerk:
+        range: string
+      NameKraftwerksblock:
+        range: string
+      DatumBaubeginn:
+        range: string
+      SteigerungNettonennleistungKombibetrieb:
+        range: float
+      AnlageIstImKombibetrieb:
+        range: string
+      MastrNummernKombibetrieb:
+        range: string
+      NetzreserveAbDatum:
+        range: string
+      SicherheitsbereitschaftAbDatum:
+        range: string
+      Hauptbrennstoff:
+        range: string
+      WeitererHauptbrennstoff:
+        range: string
+      WeitereBrennstoffe:
+        range: string
+      VerknuepfteErzeugungseinheiten:
+        range: string
+      BestandteilGrenzkraftwerk:
+        range: string
+      NettonennleistungDeutschland:
+        range: float
+      AnteiligNutzungsberechtigte:
+        range: string
+      Notstromaggregat:
+        range: string
+      Einsatzort:
+        range: string
+      KwkMastrNummer:
+        range: string
+      Technologie:
+        range: string
+      AusschliesslicheVerwendungImKombibetrieb:
+        range: string
+      NetzbetreiberMastrNummer:
+        range: string
+      Registrierungsdatum:
+        range: string
+      EinheitMastrNummer:
+        identifier: true
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      LokationMastrNummer:
+        range: string
+      NetzbetreiberpruefungStatus:
+        range: string
+      NetzbetreiberpruefungDatum:
+        range: string
+      AnlagenbetreiberMastrNummer:
+        range: string
+      Land:
+        range: string
+      Bundesland:
+        range: string
+      Landkreis:
+        range: string
+      Gemeinde:
+        range: string
+      Gemeindeschluessel:
+        range: string
+      Postleitzahl:
+        range: string
+      Gemarkung:
+        range: string
+      FlurFlurstuecknummern:
+        range: string
+      Strasse:
+        range: string
+      StrasseNichtGefunden:
+        range: string
+      Hausnummer:
+        range: string
+      HausnummerNichtGefunden:
+        range: string
+      Adresszusatz:
+        range: string
+      Ort:
+        range: string
+      Laengengrad:
+        range: float
+      Breitengrad:
+        range: float
+      UtmZonenwert:
+        range: string
+      UtmEast:
+        range: float
+      UtmNorth:
+        range: float
+      GaussKruegerHoch:
+        range: float
+      GaussKruegerRechts:
+        range: float
+      Meldedatum:
+        range: string
+      GeplantesInbetriebnahmedatum:
+        range: string
+      Inbetriebnahmedatum:
+        range: string
+      DatumEndgueltigeStilllegung:
+        range: string
+      DatumBeginnVoruebergehendeStilllegung:
+        range: string
+      DatumBeendigungVorlaeufigenStilllegung:
+        range: string
+      DatumWiederaufnahmeBetrieb:
+        range: string
+      EinheitSystemstatus:
+        range: string
+      EinheitBetriebsstatus:
+        range: string
+      BestandsanlageMastrNummer:
+        range: string
+      NichtVorhandenInMigriertenEinheiten:
+        range: string
+      AltAnlagenbetreiberMastrNummer:
+        range: string
+      DatumDesBetreiberwechsels:
+        range: string
+      DatumRegistrierungDesBetreiberwechsels:
+        range: string
+      NameStromerzeugungseinheit:
+        range: string
+      Weic:
+        range: string
+      WeicDisplayName:
+        range: string
+      Kraftwerksnummer:
+        range: string
+      Energietraeger:
+        range: string
+      Bruttoleistung:
+        range: float
+      Nettonennleistung:
+        range: float
+      AnschlussAnHoechstOderHochSpannung:
+        range: string
+      Schwarzstartfaehigkeit:
+        range: string
+      Inselbetriebsfaehigkeit:
+        range: string
+      Einsatzverantwortlicher:
+        range: string
+      FernsteuerbarkeitNb:
+        range: string
+      FernsteuerbarkeitDv:
+        range: string
+      FernsteuerbarkeitDr:
+        range: string
+      Einspeisungsart:
+        range: string
+      PraequalifiziertFuerRegelenergie:
+        range: string
+      GenMastrNummer:
+        range: string
+      Netzbetreiberzuordnungen:
+        range: string
+      ReserveartNachDemEnWG:
+        range: string
+      DatumUeberfuehrungInReserve:
+        range: string
+      Hausnummer_nv:
+        range: string
+      Weic_nv:
+        range: string
+      Kraftwerksnummer_nv:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+      KapazitaetsreserveZugeordnet:
+        range: string
+      NetzreserveZugeordnet:
+        range: string
+      DatumKapazitaetsreserve:
+        range: string
+      InbetriebnahmedatumAmAktuellenStandort:
+        range: string
+      DatumNetzreserve:
+        range: string
+  deleted_market_actors:
+    attributes:
+      MarktakteurMastrNummer:
+        identifier: true
+        range: string
+      MarktakteurStatus:
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+  deleted_units:
+    attributes:
+      DatumLetzteAktualisierung:
+        range: string
+      EinheitMastrNummer:
+        identifier: true
+        range: string
+      Einheittyp:
+        range: string
+      EinheitSystemstatus:
+        range: string
+      EinheitBetriebsstatus:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+  electricity_consumer:
+    attributes:
+      EinheitMastrNummer:
+        identifier: true
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      LokationMastrNummer:
+        range: string
+      NetzbetreiberpruefungStatus:
+        range: string
+      NetzbetreiberpruefungDatum:
+        range: string
+      AnlagenbetreiberMastrNummer:
+        range: string
+      Land:
+        range: string
+      Bundesland:
+        range: string
+      Landkreis:
+        range: string
+      Gemeinde:
+        range: string
+      Gemeindeschluessel:
+        range: string
+      Postleitzahl:
+        range: string
+      Ort:
+        range: string
+      Strasse:
+        range: string
+      StrasseNichtGefunden:
+        range: integer
+      Hausnummer:
+        range: string
+      Hausnummer_nv:
+        range: integer
+      HausnummerNichtGefunden:
+        range: integer
+      Adresszusatz:
+        range: string
+      Gemarkung:
+        range: string
+      FlurFlurstuecknummern:
+        range: string
+      Laengengrad:
+        range: float
+      Breitengrad:
+        range: float
+      Registrierungsdatum:
+        range: string
+      Inbetriebnahmedatum:
+        range: string
+      EinheitSystemstatus:
+        range: string
+      EinheitBetriebsstatus:
+        range: string
+      NichtVorhandenInMigriertenEinheiten:
+        range: integer
+      Einsatzverantwortlicher:
+        range: string
+      NameStromverbrauchseinheit:
+        range: string
+      AnzahlStromverbrauchseinheitenGroesser50Mw:
+        range: integer
+      PraequalifiziertGemaessAblav:
+        range: string
+      AnteilBeinflussbareLast:
+        range: float
+      ArtAbschaltbareLast:
+        range: string
+      DatumDesBetreiberwechsels:
+        range: string
+      DatumRegistrierungDesBetreiberwechsels:
+        range: string
+      DatumBeginnVoruebergehendeStilllegung:
+        range: string
+      DatumEndgueltigeStilllegung:
+        range: string
+      GeplantesInbetriebnahmedatum:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+      AltAnlagenbetreiberMastrNummer:
+        range: string
+  gas_consumer:
+    attributes:
+      EinheitMastrNummer:
+        identifier: true
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      LokationMastrNummer:
+        range: string
+      NetzbetreiberpruefungStatus:
+        range: string
+      NetzbetreiberpruefungDatum:
+        range: string
+      AnlagenbetreiberMastrNummer:
+        range: string
+      Land:
+        range: string
+      Bundesland:
+        range: string
+      Landkreis:
+        range: string
+      Gemeinde:
+        range: string
+      Gemeindeschluessel:
+        range: string
+      Postleitzahl:
+        range: string
+      Ort:
+        range: string
+      Strasse:
+        range: string
+      StrasseNichtGefunden:
+        range: integer
+      Hausnummer:
+        range: string
+      Hausnummer_nv:
+        range: integer
+      HausnummerNichtGefunden:
+        range: integer
+      Laengengrad:
+        range: float
+      Breitengrad:
+        range: float
+      Registrierungsdatum:
+        range: string
+      Inbetriebnahmedatum:
+        range: string
+      EinheitSystemstatus:
+        range: string
+      EinheitBetriebsstatus:
+        range: string
+      NichtVorhandenInMigriertenEinheiten:
+        range: integer
+      NameGasverbrauchsseinheit:
+        range: string
+      EinheitDientDerStromerzeugung:
+        range: string
+      MaximaleGasbezugsleistung:
+        range: float
+      VerknuepfteEinheit:
+        range: string
+      GeplantesInbetriebnahmedatum:
+        range: string
+      Adresszusatz:
+        range: string
+      Gemarkung:
+        range: string
+      FlurFlurstuecknummern:
+        range: string
+      DatumDesBetreiberwechsels:
+        range: string
+      DatumRegistrierungDesBetreiberwechsels:
+        range: string
+      DatumEndgueltigeStilllegung:
+        range: string
+      DatumBeginnVoruebergehendeStilllegung:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+      AltAnlagenbetreiberMastrNummer:
+        range: string
+  gas_producer:
+    attributes:
+      EinheitMastrNummer:
+        identifier: true
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      LokationMastrNummer:
+        range: string
+      NetzbetreiberpruefungStatus:
+        range: string
+      NetzbetreiberpruefungDatum:
+        range: string
+      AnlagenbetreiberMastrNummer:
+        range: string
+      Land:
+        range: string
+      Bundesland:
+        range: string
+      Landkreis:
+        range: string
+      Gemeinde:
+        range: string
+      Gemeindeschluessel:
+        range: string
+      Postleitzahl:
+        range: string
+      Ort:
+        range: string
+      Registrierungsdatum:
+        range: string
+      Inbetriebnahmedatum:
+        range: string
+      EinheitSystemstatus:
+        range: string
+      EinheitBetriebsstatus:
+        range: string
+      NichtVorhandenInMigriertenEinheiten:
+        range: integer
+      NameGaserzeugungseinheit:
+        range: string
+      SpeicherMastrNummer:
+        range: string
+      Strasse:
+        range: string
+      StrasseNichtGefunden:
+        range: integer
+      Hausnummer:
+        range: string
+      Hausnummer_nv:
+        range: integer
+      HausnummerNichtGefunden:
+        range: integer
+      Adresszusatz:
+        range: string
+      Laengengrad:
+        range: float
+      Breitengrad:
+        range: float
+      Technologie:
+        range: string
+      Erzeugungsleistung:
+        range: float
+      DatumDesBetreiberwechsels:
+        range: string
+      DatumRegistrierungDesBetreiberwechsels:
+        range: string
+      Gemarkung:
+        range: string
+      FlurFlurstuecknummern:
+        range: string
+      GeplantesInbetriebnahmedatum:
+        range: string
+      DatumBeginnVoruebergehendeStilllegung:
+        range: string
+      DatumEndgueltigeStilllegung:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+      AltAnlagenbetreiberMastrNummer:
+        range: string
+  gas_storage:
+    attributes:
+      MastrNummer:
+        identifier: true
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      Speichername:
+        range: string
+      Registrierungsdatum:
+        range: string
+      AnlageBetriebsstatus:
+        range: string
+      VerknuepfteEinheit:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+  gas_storage_extended:
+    attributes:
+      EinheitMastrNummer:
+        identifier: true
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      LokationMastrNummer:
+        range: string
+      NetzbetreiberpruefungStatus:
+        range: string
+      NetzbetreiberpruefungDatum:
+        range: string
+      AnlagenbetreiberMastrNummer:
+        range: string
+      Land:
+        range: string
+      Bundesland:
+        range: string
+      Landkreis:
+        range: string
+      Gemeinde:
+        range: string
+      Gemeindeschluessel:
+        range: string
+      Postleitzahl:
+        range: string
+      Ort:
+        range: string
+      Strasse:
+        range: string
+      StrasseNichtGefunden:
+        range: integer
+      Hausnummer:
+        range: string
+      Hausnummer_nv:
+        range: integer
+      HausnummerNichtGefunden:
+        range: integer
+      Laengengrad:
+        range: float
+      Breitengrad:
+        range: float
+      Registrierungsdatum:
+        range: string
+      Inbetriebnahmedatum:
+        range: string
+      EinheitSystemstatus:
+        range: string
+      EinheitBetriebsstatus:
+        range: string
+      NichtVorhandenInMigriertenEinheiten:
+        range: integer
+      NameGasspeicher:
+        range: string
+      Speicherart:
+        range: string
+      MaximalNutzbaresArbeitsgasvolumen:
+        range: float
+      MaximaleEinspeicherleistung:
+        range: float
+      MaximaleAusspeicherleistung:
+        range: float
+      DurchschnittlicherBrennwert:
+        range: float
+      Weic:
+        range: string
+      Weic_Na:
+        range: integer
+      SpeicherMastrNummer:
+        range: string
+      Gemarkung:
+        range: string
+      FlurFlurstuecknummern:
+        range: string
+      Adresszusatz:
+        range: string
+      DatumBeginnVoruebergehendeStilllegung:
+        range: string
+      DatumDesBetreiberwechsels:
+        range: string
+      DatumRegistrierungDesBetreiberwechsels:
+        range: string
+      DatumEndgueltigeStilllegung:
+        range: string
+      ZugeordnenteWirkleistungWechselrichter:
+        range: float
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+      AltAnlagenbetreiberMastrNummer:
+        range: string
+  grid_connections:
+    attributes:
+      NetzanschlusspunktMastrNummer:
+        identifier: true
+        range: string
+      NetzanschlusspunktBezeichnung:
+        range: string
+      LetzteAenderung:
+        range: string
+      LokationMastrNummer:
+        range: string
+      Lokationtyp:
+        range: string
+      MaximaleEinspeiseleistung:
+        range: float
+      Gasqualitaet:
+        range: string
+      NetzMastrNummer:
+        range: string
+      NochInPlanung:
+        range: string
+      NameDerTechnischenLokation:
+        range: string
+      MaximaleAusspeiseleistung:
+        range: float
+      Messlokation:
+        range: string
+      Spannungsebene:
+        range: string
+      BilanzierungsgebietNetzanschlusspunktId:
+        range: integer
+      Nettoengpassleistung:
+        range: float
+      Netzanschlusskapazitaet:
+        range: float
+      RegelzoneNetzanschlusspunkt:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+      NetzbetreiberMaStRNummer:
+        range: string
+  grids:
+    attributes:
+      MastrNummer:
+        identifier: true
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      Sparte:
+        range: string
+      KundenAngeschlossen:
+        range: string
+      GeschlossenesVerteilnetz:
+        range: string
+      Bezeichnung:
+        range: string
+      Marktgebiet:
+        range: string
+      Bundesland:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+      Bilanzierungsgebiete:
+        range: string
+  gsgk_eeg:
+    attributes:
+      InstallierteLeistung:
+        range: float
+      AnlageBetriebsstatus:
+        range: string
+      Registrierungsdatum:
+        range: string
+      EegMastrNummer:
+        identifier: true
+        range: string
+      Meldedatum:
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      EegInbetriebnahmedatum:
+        range: string
+      VerknuepfteEinheit:
+        range: string
+      AnlagenschluesselEeg:
+        range: string
+      AusschreibungZuschlag:
+        range: string
+      AnlagenkennzifferAnlagenregister:
+        range: string
+      AnlagenkennzifferAnlagenregister_nv:
+        range: string
+      Netzbetreiberzuordnungen:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+  gsgk_extended:
+    attributes:
+      Technologie:
+        range: string
+      KwkMastrNummer:
+        range: string
+      EegMastrNummer:
+        range: string
+      NetzbetreiberMastrNummer:
+        range: string
+      Registrierungsdatum:
+        range: string
+      EinheitMastrNummer:
+        identifier: true
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      LokationMastrNummer:
+        range: string
+      NetzbetreiberpruefungStatus:
+        range: string
+      NetzbetreiberpruefungDatum:
+        range: string
+      AnlagenbetreiberMastrNummer:
+        range: string
+      Land:
+        range: string
+      Bundesland:
+        range: string
+      Landkreis:
+        range: string
+      Gemeinde:
+        range: string
+      Gemeindeschluessel:
+        range: string
+      Postleitzahl:
+        range: string
+      Gemarkung:
+        range: string
+      FlurFlurstuecknummern:
+        range: string
+      Strasse:
+        range: string
+      StrasseNichtGefunden:
+        range: string
+      Hausnummer:
+        range: string
+      HausnummerNichtGefunden:
+        range: string
+      Adresszusatz:
+        range: string
+      Ort:
+        range: string
+      Laengengrad:
+        range: float
+      Breitengrad:
+        range: float
+      UtmZonenwert:
+        range: string
+      UtmEast:
+        range: float
+      UtmNorth:
+        range: float
+      GaussKruegerHoch:
+        range: float
+      GaussKruegerRechts:
+        range: float
+      Meldedatum:
+        range: string
+      GeplantesInbetriebnahmedatum:
+        range: string
+      Inbetriebnahmedatum:
+        range: string
+      DatumEndgueltigeStilllegung:
+        range: string
+      DatumBeginnVoruebergehendeStilllegung:
+        range: string
+      DatumBeendigungVorlaeufigenStilllegung:
+        range: string
+      DatumWiederaufnahmeBetrieb:
+        range: string
+      EinheitSystemstatus:
+        range: string
+      EinheitBetriebsstatus:
+        range: string
+      BestandsanlageMastrNummer:
+        range: string
+      NichtVorhandenInMigriertenEinheiten:
+        range: string
+      AltAnlagenbetreiberMastrNummer:
+        range: string
+      DatumDesBetreiberwechsels:
+        range: string
+      DatumRegistrierungDesBetreiberwechsels:
+        range: string
+      NameStromerzeugungseinheit:
+        range: string
+      Weic:
+        range: string
+      WeicDisplayName:
+        range: string
+      Kraftwerksnummer:
+        range: string
+      Energietraeger:
+        range: string
+      Bruttoleistung:
+        range: float
+      Nettonennleistung:
+        range: float
+      AnschlussAnHoechstOderHochSpannung:
+        range: string
+      Schwarzstartfaehigkeit:
+        range: string
+      Inselbetriebsfaehigkeit:
+        range: string
+      Einsatzverantwortlicher:
+        range: string
+      FernsteuerbarkeitNb:
+        range: string
+      FernsteuerbarkeitDv:
+        range: string
+      FernsteuerbarkeitDr:
+        range: string
+      Einspeisungsart:
+        range: string
+      PraequalifiziertFuerRegelenergie:
+        range: string
+      GenMastrNummer:
+        range: string
+      Netzbetreiberzuordnungen:
+        range: string
+      ReserveartNachDemEnWG:
+        range: string
+      DatumUeberfuehrungInReserve:
+        range: string
+      Hausnummer_nv:
+        range: string
+      Weic_nv:
+        range: string
+      Kraftwerksnummer_nv:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+      NetzreserveZugeordnet:
+        range: string
+      KapazitaetsreserveZugeordnet:
+        range: string
+  hydro_eeg:
+    attributes:
+      InstallierteLeistung:
+        range: float
+      AnlageBetriebsstatus:
+        range: string
+      Ertuechtigung:
+        range: string
+      ErtuechtigungIds:
+        range: string
+      Registrierungsdatum:
+        range: string
+      EegMastrNummer:
+        identifier: true
+        range: string
+      Meldedatum:
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      EegInbetriebnahmedatum:
+        range: string
+      VerknuepfteEinheit:
+        range: string
+      AnlagenschluesselEeg:
+        range: string
+      AusschreibungZuschlag:
+        range: string
+      AnlagenkennzifferAnlagenregister:
+        range: string
+      AnlagenkennzifferAnlagenregister_nv:
+        range: string
+      Netzbetreiberzuordnungen:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+  hydro_extended:
+    attributes:
+      NameKraftwerk:
+        range: string
+      ArtDerWasserkraftanlage:
+        range: string
+      MinderungStromerzeugung:
+        range: string
+      BestandteilGrenzkraftwerk:
+        range: string
+      NettonennleistungDeutschland:
+        range: float
+      ArtDesZuflusses:
+        range: string
+      EegMastrNummer:
+        range: string
+      NetzbetreiberMastrNummer:
+        range: string
+      Registrierungsdatum:
+        range: string
+      EinheitMastrNummer:
+        identifier: true
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      LokationMastrNummer:
+        range: string
+      NetzbetreiberpruefungStatus:
+        range: string
+      NetzbetreiberpruefungDatum:
+        range: string
+      AnlagenbetreiberMastrNummer:
+        range: string
+      Land:
+        range: string
+      Bundesland:
+        range: string
+      Landkreis:
+        range: string
+      Gemeinde:
+        range: string
+      Gemeindeschluessel:
+        range: string
+      Postleitzahl:
+        range: string
+      Gemarkung:
+        range: string
+      FlurFlurstuecknummern:
+        range: string
+      Strasse:
+        range: string
+      StrasseNichtGefunden:
+        range: string
+      Hausnummer:
+        range: string
+      HausnummerNichtGefunden:
+        range: string
+      Adresszusatz:
+        range: string
+      Ort:
+        range: string
+      Laengengrad:
+        range: float
+      Breitengrad:
+        range: float
+      UtmZonenwert:
+        range: string
+      UtmEast:
+        range: float
+      UtmNorth:
+        range: float
+      GaussKruegerHoch:
+        range: float
+      GaussKruegerRechts:
+        range: float
+      Meldedatum:
+        range: string
+      GeplantesInbetriebnahmedatum:
+        range: string
+      Inbetriebnahmedatum:
+        range: string
+      DatumEndgueltigeStilllegung:
+        range: string
+      DatumBeginnVoruebergehendeStilllegung:
+        range: string
+      DatumBeendigungVorlaeufigenStilllegung:
+        range: string
+      DatumWiederaufnahmeBetrieb:
+        range: string
+      EinheitSystemstatus:
+        range: string
+      EinheitBetriebsstatus:
+        range: string
+      BestandsanlageMastrNummer:
+        range: string
+      NichtVorhandenInMigriertenEinheiten:
+        range: string
+      AltAnlagenbetreiberMastrNummer:
+        range: string
+      DatumDesBetreiberwechsels:
+        range: string
+      DatumRegistrierungDesBetreiberwechsels:
+        range: string
+      NameStromerzeugungseinheit:
+        range: string
+      Weic:
+        range: string
+      WeicDisplayName:
+        range: string
+      Kraftwerksnummer:
+        range: string
+      Energietraeger:
+        range: string
+      Bruttoleistung:
+        range: float
+      Nettonennleistung:
+        range: float
+      AnschlussAnHoechstOderHochSpannung:
+        range: string
+      Schwarzstartfaehigkeit:
+        range: string
+      Inselbetriebsfaehigkeit:
+        range: string
+      Einsatzverantwortlicher:
+        range: string
+      FernsteuerbarkeitNb:
+        range: string
+      FernsteuerbarkeitDv:
+        range: string
+      FernsteuerbarkeitDr:
+        range: string
+      Einspeisungsart:
+        range: string
+      PraequalifiziertFuerRegelenergie:
+        range: string
+      GenMastrNummer:
+        range: string
+      Netzbetreiberzuordnungen:
+        range: string
+      ReserveartNachDemEnWG:
+        range: string
+      DatumUeberfuehrungInReserve:
+        range: string
+      Hausnummer_nv:
+        range: string
+      Weic_nv:
+        range: string
+      Kraftwerksnummer_nv:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+      NetzreserveZugeordnet:
+        range: string
+      KapazitaetsreserveZugeordnet:
+        range: string
+  kwk:
+    attributes:
+      Registrierungsdatum:
+        range: string
+      KwkMastrNummer:
+        identifier: true
+        range: string
+      Zuschlagnummer:
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      Inbetriebnahmedatum:
+        range: string
+      Meldedatum:
+        range: string
+      ThermischeNutzleistung:
+        range: float
+      ElektrischeKwkLeistung:
+        range: float
+      VerknuepfteEinheiten:
+        range: string
+      AnlageBetriebsstatus:
+        range: string
+      AusschreibungZuschlag:
+        range: string
+      Netzbetreiberzuordnungen:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+  locations_basic:
+    attributes:
+      LokationMastrNummer:
+        identifier: true
+        range: string
+      NameDerTechnischenLokation:
+        range: string
+      Lokationtyp:
+        range: string
+      AnzahlNetzanschlusspunkte:
+        range: integer
+  locations_extended:
+    attributes:
+      MastrNummer:
+        identifier: true
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      NameDerTechnischenLokation:
+        range: string
+      VerknuepfteEinheiten:
+        range: string
+      Netzanschlusspunkte:
+        range: string
+      Lokationtyp:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+  market_actors:
+    attributes:
+      MastrNummer:
+        identifier: true
+        range: string
+      Personenart:
+        range: string
+      Marktfunktion:
+        range: string
+      RegistergerichtAusland:
+        range: string
+      Registernummer:
+        range: string
+      DatumLetzeAktualisierung:
+        range: string
+      Firmenname:
+        range: string
+      Rechtsform:
+        range: string
+      Land:
+        range: string
+      Strasse:
+        range: string
+      Hausnummer:
+        range: string
+      Hausnummer_nv:
+        range: string
+      Postleitzahl:
+        range: string
+      Ort:
+        range: string
+      Bundesland:
+        range: string
+      Nuts2:
+        range: string
+      Email:
+        range: string
+      Telefon:
+        range: string
+      Fax_nv:
+        range: string
+      Webseite_nv:
+        range: string
+      Taetigkeitsbeginn:
+        range: string
+      AcerCode_nv:
+        range: string
+      Umsatzsteueridentifikationsnummer_nv:
+        range: string
+      BundesnetzagenturBetriebsnummer:
+        range: string
+      BundesnetzagenturBetriebsnummer_nv:
+        range: string
+      HausnummerAnZustelladresse_nv:
+        range: string
+      Kmu:
+        range: integer
+      RegistrierungsdatumMarktakteur:
+        range: string
+      Fax:
+        range: string
+      HauptwirtdschaftszweigAbteilung:
+        range: string
+      HauptwirtdschaftszweigGruppe:
+        range: string
+      HauptwirtdschaftszweigAbschnitt:
+        range: string
+      Webseite:
+        range: string
+      Umsatzsteueridentifikationsnummer:
+        range: string
+      Registergericht:
+        range: string
+      Adresszusatz:
+        range: string
+      LandAnZustelladresse:
+        range: string
+      PostleitzahlAnZustelladresse:
+        range: string
+      OrtAnZustelladresse:
+        range: string
+      StrasseAnZustelladresse:
+        range: string
+      HausnummerAnZustelladresse:
+        range: string
+      RegisternummerAusland:
+        range: string
+      SonstigeRechtsform:
+        range: string
+      AcerCode:
+        range: string
+      AdresszusatzAnZustelladresse:
+        range: string
+      Taetigkeitsende:
+        range: string
+      Region:
+        range: string
+      Taetigkeitsende_nv:
+        range: string
+      Marktrollen:
+        range: string
+      Gasgrosshaendler:
+        range: string
+      BelieferungVonLetztverbrauchernGas:
+        range: string
+      BelieferungHaushaltskundenGas:
+        range: string
+      Netz:
+        range: string
+      Direktvermarktungsunternehmen:
+        range: string
+      BelieferungVonLetztverbrauchernStrom:
+        range: string
+      BelieferungHaushaltskundenStrom:
+        range: string
+      Stromgrosshaendler:
+        range: string
+      MarktakteurVorname:
+        range: string
+      MarktakteurNachname:
+        range: string
+      WebportalDesNetzbetreibers:
+        range: string
+      RegisternummerPraefix:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+  market_roles:
+    attributes:
+      MastrNummer:
+        identifier: true
+        range: string
+      MarktakteurMastrNummer:
+        range: string
+      Marktrolle:
+        range: string
+      Marktpartneridentifikationsnummer_nv:
+        range: string
+      BundesnetzagenturBetriebsnummer:
+        range: string
+      BundesnetzagenturBetriebsnummer_nv:
+        range: string
+      Marktpartneridentifikationsnummer:
+        range: string
+      KontaktdatenMarktrolle:
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+      Wert:
+        range: string
+      Id:
+        range: string
+  missed_additional_data:
+    attributes:
+      id:
+        identifier: true
+        range: integer
+      additional_data_id:
+        range: string
+      reason:
+        range: string
+      download_date:
+        range: string
+  missed_extended_location_data:
+    attributes:
+      id:
+        identifier: true
+        range: integer
+      LokationMastrNummer:
+        range: string
+      reason:
+        range: string
+      download_date:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+  nuclear_extended:
+    attributes:
+      NameKraftwerk:
+        range: string
+      NameKraftwerksblock:
+        range: string
+      Technologie:
+        range: string
+      NetzbetreiberMastrNummer:
+        range: string
+      Registrierungsdatum:
+        range: string
+      EinheitMastrNummer:
+        identifier: true
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      LokationMastrNummer:
+        range: string
+      NetzbetreiberpruefungStatus:
+        range: string
+      NetzbetreiberpruefungDatum:
+        range: string
+      AnlagenbetreiberMastrNummer:
+        range: string
+      Land:
+        range: string
+      Bundesland:
+        range: string
+      Landkreis:
+        range: string
+      Gemeinde:
+        range: string
+      Gemeindeschluessel:
+        range: string
+      Postleitzahl:
+        range: string
+      Gemarkung:
+        range: string
+      FlurFlurstuecknummern:
+        range: string
+      Strasse:
+        range: string
+      StrasseNichtGefunden:
+        range: string
+      Hausnummer:
+        range: string
+      HausnummerNichtGefunden:
+        range: string
+      Adresszusatz:
+        range: string
+      Ort:
+        range: string
+      Laengengrad:
+        range: float
+      Breitengrad:
+        range: float
+      UtmZonenwert:
+        range: string
+      UtmEast:
+        range: float
+      UtmNorth:
+        range: float
+      GaussKruegerHoch:
+        range: float
+      GaussKruegerRechts:
+        range: float
+      Meldedatum:
+        range: string
+      GeplantesInbetriebnahmedatum:
+        range: string
+      Inbetriebnahmedatum:
+        range: string
+      DatumEndgueltigeStilllegung:
+        range: string
+      DatumBeginnVoruebergehendeStilllegung:
+        range: string
+      DatumBeendigungVorlaeufigenStilllegung:
+        range: string
+      DatumWiederaufnahmeBetrieb:
+        range: string
+      EinheitSystemstatus:
+        range: string
+      EinheitBetriebsstatus:
+        range: string
+      BestandsanlageMastrNummer:
+        range: string
+      NichtVorhandenInMigriertenEinheiten:
+        range: string
+      AltAnlagenbetreiberMastrNummer:
+        range: string
+      DatumDesBetreiberwechsels:
+        range: string
+      DatumRegistrierungDesBetreiberwechsels:
+        range: string
+      NameStromerzeugungseinheit:
+        range: string
+      Weic:
+        range: string
+      WeicDisplayName:
+        range: string
+      Kraftwerksnummer:
+        range: string
+      Energietraeger:
+        range: string
+      Bruttoleistung:
+        range: float
+      Nettonennleistung:
+        range: float
+      AnschlussAnHoechstOderHochSpannung:
+        range: string
+      Schwarzstartfaehigkeit:
+        range: string
+      Inselbetriebsfaehigkeit:
+        range: string
+      Einsatzverantwortlicher:
+        range: string
+      FernsteuerbarkeitNb:
+        range: string
+      FernsteuerbarkeitDv:
+        range: string
+      FernsteuerbarkeitDr:
+        range: string
+      Einspeisungsart:
+        range: string
+      PraequalifiziertFuerRegelenergie:
+        range: string
+      GenMastrNummer:
+        range: string
+      Netzbetreiberzuordnungen:
+        range: string
+      ReserveartNachDemEnWG:
+        range: string
+      DatumUeberfuehrungInReserve:
+        range: string
+      Hausnummer_nv:
+        range: string
+      Weic_nv:
+        range: string
+      Kraftwerksnummer_nv:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+  permit:
+    attributes:
+      Registrierungsdatum:
+        range: string
+      GenMastrNummer:
+        identifier: true
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      Art:
+        range: string
+      Datum:
+        range: string
+      Behoerde:
+        range: string
+      Aktenzeichen:
+        range: string
+      Frist:
+        range: string
+      WasserrechtsNummer:
+        range: string
+      WasserrechtAblaufdatum:
+        range: string
+      Meldedatum:
+        range: string
+      VerknuepfteEinheiten:
+        range: string
+      Frist_nv:
+        range: string
+      WasserrechtAblaufdatum_nv:
+        range: string
+      Netzbetreiberzuordnungen:
+        range: string
+      DatumAntragstellung:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+  retrofit_units:
+    attributes:
+      Id:
+        identifier: true
+        range: integer
+      EegMastrNummer:
+        range: string
+      Leistungserhoehung:
+        range: float
+      WiederinbetriebnahmeDatum:
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      Ertuechtigungsart:
+        range: string
+      ErtuechtigungIstZulassungspflichtig:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+  solar_eeg:
+    attributes:
+      InanspruchnahmeZahlungNachEeg:
+        range: string
+      InstallierteLeistung:
+        range: float
+      RegistrierungsnummerPvMeldeportal:
+        range: string
+      MieterstromRegistrierungsdatum:
+        range: string
+      MieterstromZugeordnet:
+        range: string
+      MieterstromMeldedatum:
+        range: string
+      MieterstromErsteZuordnungZuschlag:
+        range: string
+      ZugeordneteGebotsmenge:
+        range: float
+      Zuschlagsnummer:
+        range: string
+      AnlageBetriebsstatus:
+        range: string
+      RegistrierungsnummerPvMeldeportal_nv:
+        range: string
+      Registrierungsdatum:
+        range: string
+      EegMastrNummer:
+        identifier: true
+        range: string
+      Meldedatum:
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      EegInbetriebnahmedatum:
+        range: string
+      VerknuepfteEinheit:
+        range: string
+      AnlagenschluesselEeg:
+        range: string
+      AusschreibungZuschlag:
+        range: string
+      AnlagenkennzifferAnlagenregister:
+        range: string
+      AnlagenkennzifferAnlagenregister_nv:
+        range: string
+      Netzbetreiberzuordnungen:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+  solar_extended:
+    attributes:
+      ZugeordneteWirkleistungWechselrichter:
+        range: float
+      GemeinsamerWechselrichterMitSpeicher:
+        range: string
+      AnzahlModule:
+        range: integer
+      Lage:
+        range: string
+      Leistungsbegrenzung:
+        range: string
+      EinheitlicheAusrichtungUndNeigungswinkel:
+        range: string
+      Hauptausrichtung:
+        range: string
+      HauptausrichtungNeigungswinkel:
+        range: string
+      Nebenausrichtung:
+        range: string
+      NebenausrichtungNeigungswinkel:
+        range: string
+      InAnspruchGenommeneFlaeche:
+        range: float
+      ArtDerFlaeche:
+        range: string
+      InAnspruchGenommeneLandwirtschaftlichGenutzteFlaeche:
+        range: float
+      Nutzungsbereich:
+        range: string
+      Buergerenergie:
+        range: string
+      EegMastrNummer:
+        range: string
+      ArtDerFlaecheIds:
+        range: string
+      ArtDerSolaranlage:
+        range: string
+      Zaehlernummer:
+        range: string
+      InAnspruchGenommeneAckerflaeche:
+        range: float
+      SpeicherAmGleichenOrt:
+        range: string
+      NetzbetreiberMastrNummer:
+        range: string
+      Registrierungsdatum:
+        range: string
+      EinheitMastrNummer:
+        identifier: true
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      LokationMastrNummer:
+        range: string
+      NetzbetreiberpruefungStatus:
+        range: string
+      NetzbetreiberpruefungDatum:
+        range: string
+      AnlagenbetreiberMastrNummer:
+        range: string
+      Land:
+        range: string
+      Bundesland:
+        range: string
+      Landkreis:
+        range: string
+      Gemeinde:
+        range: string
+      Gemeindeschluessel:
+        range: string
+      Postleitzahl:
+        range: string
+      Gemarkung:
+        range: string
+      FlurFlurstuecknummern:
+        range: string
+      Strasse:
+        range: string
+      StrasseNichtGefunden:
+        range: string
+      Hausnummer:
+        range: string
+      HausnummerNichtGefunden:
+        range: string
+      Adresszusatz:
+        range: string
+      Ort:
+        range: string
+      Laengengrad:
+        range: float
+      Breitengrad:
+        range: float
+      UtmZonenwert:
+        range: string
+      UtmEast:
+        range: float
+      UtmNorth:
+        range: float
+      GaussKruegerHoch:
+        range: float
+      GaussKruegerRechts:
+        range: float
+      Meldedatum:
+        range: string
+      GeplantesInbetriebnahmedatum:
+        range: string
+      Inbetriebnahmedatum:
+        range: string
+      DatumEndgueltigeStilllegung:
+        range: string
+      DatumBeginnVoruebergehendeStilllegung:
+        range: string
+      DatumBeendigungVorlaeufigenStilllegung:
+        range: string
+      DatumWiederaufnahmeBetrieb:
+        range: string
+      EinheitSystemstatus:
+        range: string
+      EinheitBetriebsstatus:
+        range: string
+      BestandsanlageMastrNummer:
+        range: string
+      NichtVorhandenInMigriertenEinheiten:
+        range: string
+      AltAnlagenbetreiberMastrNummer:
+        range: string
+      DatumDesBetreiberwechsels:
+        range: string
+      DatumRegistrierungDesBetreiberwechsels:
+        range: string
+      NameStromerzeugungseinheit:
+        range: string
+      Weic:
+        range: string
+      WeicDisplayName:
+        range: string
+      Kraftwerksnummer:
+        range: string
+      Energietraeger:
+        range: string
+      Bruttoleistung:
+        range: float
+      Nettonennleistung:
+        range: float
+      AnschlussAnHoechstOderHochSpannung:
+        range: string
+      Schwarzstartfaehigkeit:
+        range: string
+      Inselbetriebsfaehigkeit:
+        range: string
+      Einsatzverantwortlicher:
+        range: string
+      FernsteuerbarkeitNb:
+        range: string
+      FernsteuerbarkeitDv:
+        range: string
+      FernsteuerbarkeitDr:
+        range: string
+      Einspeisungsart:
+        range: string
+      PraequalifiziertFuerRegelenergie:
+        range: string
+      GenMastrNummer:
+        range: string
+      Netzbetreiberzuordnungen:
+        range: string
+      ReserveartNachDemEnWG:
+        range: string
+      DatumUeberfuehrungInReserve:
+        range: string
+      Hausnummer_nv:
+        range: string
+      Weic_nv:
+        range: string
+      Kraftwerksnummer_nv:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+      UeberwiegendeNutzungsartDerFlaecheVorErrichtungDerSolaranlage:
+        range: string
+      InbetriebnahmedatumAmAktuellenStandort:
+        range: string
+      GroesseDerInAnspruchGenommenenFlaecheInHektar:
+        range: string
+      LichteHoehe:
+        range: string
+      VorherigerNutzungsartenbereichDerFlaeche:
+        range: string
+      NameDesSolarparks:
+        range: string
+      ZusaetzlicheMerkmaleDerFlaecheUndDerAktuellenFlaechennutzung:
+        range: string
+  storage_eeg:
+    attributes:
+      eegAnlagenschluessel:
+        range: string
+      eegZuschlagsnummer:
+        range: string
+      eegAusschreibungZuschlag:
+        range: string
+      Registrierungsdatum:
+        range: string
+      EegMastrNummer:
+        identifier: true
+        range: string
+      Meldedatum:
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      EegInbetriebnahmedatum:
+        range: string
+      VerknuepfteEinheit:
+        range: string
+      AnlagenschluesselEeg:
+        range: string
+      AusschreibungZuschlag:
+        range: string
+      AnlagenkennzifferAnlagenregister:
+        range: string
+      AnlagenkennzifferAnlagenregister_nv:
+        range: string
+      Netzbetreiberzuordnungen:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+  storage_extended:
+    attributes:
+      Einsatzort:
+        range: string
+      AcDcKoppelung:
+        range: string
+      Batterietechnologie:
+        range: string
+      PumpbetriebLeistungsaufnahme:
+        range: float
+      PumpbetriebKontinuierlichRegelbar:
+        range: string
+      Pumpspeichertechnologie:
+        range: string
+      Notstromaggregat:
+        range: string
+      BestandteilGrenzkraftwerk:
+        range: string
+      NettonennleistungDeutschland:
+        range: float
+      ZugeordneteWirkleistungWechselrichter:
+        range: float
+      NutzbareSpeicherkapazitaet:
+        range: float
+      SpeMastrNummer:
+        range: string
+      EegMastrNummer:
+        range: string
+      EegAnlagentyp:
+        range: string
+      Technologie:
+        range: string
+      LeistungsaufnahmeBeimEinspeichern:
+        range: float
+      GemeinsamRegistrierteSolareinheitMastrNummer:
+        range: string
+      NetzbetreiberMastrNummer:
+        range: string
+      Registrierungsdatum:
+        range: string
+      EinheitMastrNummer:
+        identifier: true
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      LokationMastrNummer:
+        range: string
+      NetzbetreiberpruefungStatus:
+        range: string
+      NetzbetreiberpruefungDatum:
+        range: string
+      AnlagenbetreiberMastrNummer:
+        range: string
+      Land:
+        range: string
+      Bundesland:
+        range: string
+      Landkreis:
+        range: string
+      Gemeinde:
+        range: string
+      Gemeindeschluessel:
+        range: string
+      Postleitzahl:
+        range: string
+      Gemarkung:
+        range: string
+      FlurFlurstuecknummern:
+        range: string
+      Strasse:
+        range: string
+      StrasseNichtGefunden:
+        range: string
+      Hausnummer:
+        range: string
+      HausnummerNichtGefunden:
+        range: string
+      Adresszusatz:
+        range: string
+      Ort:
+        range: string
+      Laengengrad:
+        range: float
+      Breitengrad:
+        range: float
+      UtmZonenwert:
+        range: string
+      UtmEast:
+        range: float
+      UtmNorth:
+        range: float
+      GaussKruegerHoch:
+        range: float
+      GaussKruegerRechts:
+        range: float
+      Meldedatum:
+        range: string
+      GeplantesInbetriebnahmedatum:
+        range: string
+      Inbetriebnahmedatum:
+        range: string
+      DatumEndgueltigeStilllegung:
+        range: string
+      DatumBeginnVoruebergehendeStilllegung:
+        range: string
+      DatumBeendigungVorlaeufigenStilllegung:
+        range: string
+      DatumWiederaufnahmeBetrieb:
+        range: string
+      EinheitSystemstatus:
+        range: string
+      EinheitBetriebsstatus:
+        range: string
+      BestandsanlageMastrNummer:
+        range: string
+      NichtVorhandenInMigriertenEinheiten:
+        range: string
+      AltAnlagenbetreiberMastrNummer:
+        range: string
+      DatumDesBetreiberwechsels:
+        range: string
+      DatumRegistrierungDesBetreiberwechsels:
+        range: string
+      NameStromerzeugungseinheit:
+        range: string
+      Weic:
+        range: string
+      WeicDisplayName:
+        range: string
+      Kraftwerksnummer:
+        range: string
+      Energietraeger:
+        range: string
+      Bruttoleistung:
+        range: float
+      Nettonennleistung:
+        range: float
+      AnschlussAnHoechstOderHochSpannung:
+        range: string
+      Schwarzstartfaehigkeit:
+        range: string
+      Inselbetriebsfaehigkeit:
+        range: string
+      Einsatzverantwortlicher:
+        range: string
+      FernsteuerbarkeitNb:
+        range: string
+      FernsteuerbarkeitDv:
+        range: string
+      FernsteuerbarkeitDr:
+        range: string
+      Einspeisungsart:
+        range: string
+      PraequalifiziertFuerRegelenergie:
+        range: string
+      GenMastrNummer:
+        range: string
+      Netzbetreiberzuordnungen:
+        range: string
+      ReserveartNachDemEnWG:
+        range: string
+      DatumUeberfuehrungInReserve:
+        range: string
+      Hausnummer_nv:
+        range: string
+      Weic_nv:
+        range: string
+      Kraftwerksnummer_nv:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+      InbetriebnahmedatumAmAktuellenStandort:
+        range: string
+      ZugeordnenteWirkleistungWechselrichter:
+        range: string
+      NetzreserveZugeordnet:
+        range: string
+      KapazitaetsreserveZugeordnet:
+        range: string
+      DatumKapazitaetsreserve:
+        range: string
+  storage_units:
+    attributes:
+      MastrNummer:
+        identifier: true
+        range: string
+      Registrierungsdatum:
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      NutzbareSpeicherkapazitaet:
+        range: float
+      VerknuepfteEinheit:
+        range: string
+      AnlageBetriebsstatus:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+  wind_eeg:
+    attributes:
+      PrototypAnlage:
+        range: string
+      PilotAnlage:
+        range: string
+      InstallierteLeistung:
+        range: float
+      VerhaeltnisErtragsschaetzungReferenzertrag:
+        range: float
+      VerhaeltnisReferenzertragErtrag5Jahre:
+        range: float
+      VerhaeltnisReferenzertragErtrag10Jahre:
+        range: float
+      VerhaeltnisReferenzertragErtrag15Jahre:
+        range: float
+      Zuschlagsnummer:
+        range: string
+      AnlageBetriebsstatus:
+        range: string
+      VerhaeltnisErtragsschaetzungReferenzertrag_nv:
+        range: string
+      VerhaeltnisReferenzertragErtrag5Jahre_nv:
+        range: string
+      VerhaeltnisReferenzertragErtrag10Jahre_nv:
+        range: string
+      VerhaeltnisReferenzertragErtrag15Jahre_nv:
+        range: string
+      Registrierungsdatum:
+        range: string
+      EegMastrNummer:
+        identifier: true
+        range: string
+      Meldedatum:
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      EegInbetriebnahmedatum:
+        range: string
+      VerknuepfteEinheit:
+        range: string
+      AnlagenschluesselEeg:
+        range: string
+      AusschreibungZuschlag:
+        range: string
+      AnlagenkennzifferAnlagenregister:
+        range: string
+      AnlagenkennzifferAnlagenregister_nv:
+        range: string
+      Netzbetreiberzuordnungen:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+  wind_extended:
+    attributes:
+      NameWindpark:
+        range: string
+      Lage:
+        range: string
+      Seelage:
+        range: string
+      ClusterOstsee:
+        range: string
+      ClusterNordsee:
+        range: string
+      Hersteller:
+        range: string
+      HerstellerId:
+        range: string
+      Technologie:
+        range: string
+      Typenbezeichnung:
+        range: string
+      Nabenhoehe:
+        range: float
+      Rotordurchmesser:
+        range: float
+      Rotorblattenteisungssystem:
+        range: string
+      AuflageAbschaltungLeistungsbegrenzung:
+        range: string
+      AuflagenAbschaltungSchallimmissionsschutzNachts:
+        range: string
+      AuflagenAbschaltungSchallimmissionsschutzTagsueber:
+        range: string
+      AuflagenAbschaltungSchattenwurf:
+        range: string
+      AuflagenAbschaltungTierschutz:
+        range: string
+      AuflagenAbschaltungEiswurf:
+        range: string
+      AuflagenAbschaltungSonstige:
+        range: string
+      Wassertiefe:
+        range: float
+      Kuestenentfernung:
+        range: float
+      Buergerenergie:
+        range: string
+      Nachtkennzeichen:
+        range: string
+      EegMastrNummer:
+        range: string
+      WindAnLandOderAufSee:
+        range: string
+      TechnologieFlugwind:
+        range: string
+      Flughoehe:
+        range: float
+      Flugradius:
+        range: float
+      NetzbetreiberMastrNummer:
+        range: string
+      Registrierungsdatum:
+        range: string
+      EinheitMastrNummer:
+        identifier: true
+        range: string
+      DatumLetzteAktualisierung:
+        range: string
+      LokationMastrNummer:
+        range: string
+      NetzbetreiberpruefungStatus:
+        range: string
+      NetzbetreiberpruefungDatum:
+        range: string
+      AnlagenbetreiberMastrNummer:
+        range: string
+      Land:
+        range: string
+      Bundesland:
+        range: string
+      Landkreis:
+        range: string
+      Gemeinde:
+        range: string
+      Gemeindeschluessel:
+        range: string
+      Postleitzahl:
+        range: string
+      Gemarkung:
+        range: string
+      FlurFlurstuecknummern:
+        range: string
+      Strasse:
+        range: string
+      StrasseNichtGefunden:
+        range: string
+      Hausnummer:
+        range: string
+      HausnummerNichtGefunden:
+        range: string
+      Adresszusatz:
+        range: string
+      Ort:
+        range: string
+      Laengengrad:
+        range: float
+      Breitengrad:
+        range: float
+      UtmZonenwert:
+        range: string
+      UtmEast:
+        range: float
+      UtmNorth:
+        range: float
+      GaussKruegerHoch:
+        range: float
+      GaussKruegerRechts:
+        range: float
+      Meldedatum:
+        range: string
+      GeplantesInbetriebnahmedatum:
+        range: string
+      Inbetriebnahmedatum:
+        range: string
+      DatumEndgueltigeStilllegung:
+        range: string
+      DatumBeginnVoruebergehendeStilllegung:
+        range: string
+      DatumBeendigungVorlaeufigenStilllegung:
+        range: string
+      DatumWiederaufnahmeBetrieb:
+        range: string
+      EinheitSystemstatus:
+        range: string
+      EinheitBetriebsstatus:
+        range: string
+      BestandsanlageMastrNummer:
+        range: string
+      NichtVorhandenInMigriertenEinheiten:
+        range: string
+      AltAnlagenbetreiberMastrNummer:
+        range: string
+      DatumDesBetreiberwechsels:
+        range: string
+      DatumRegistrierungDesBetreiberwechsels:
+        range: string
+      NameStromerzeugungseinheit:
+        range: string
+      Weic:
+        range: string
+      WeicDisplayName:
+        range: string
+      Kraftwerksnummer:
+        range: string
+      Energietraeger:
+        range: string
+      Bruttoleistung:
+        range: float
+      Nettonennleistung:
+        range: float
+        unit:
+          ucum_code: kW
+      AnschlussAnHoechstOderHochSpannung:
+        range: string
+      Schwarzstartfaehigkeit:
+        range: string
+      Inselbetriebsfaehigkeit:
+        range: string
+      Einsatzverantwortlicher:
+        range: string
+      FernsteuerbarkeitNb:
+        range: string
+      FernsteuerbarkeitDv:
+        range: string
+      FernsteuerbarkeitDr:
+        range: string
+      Einspeisungsart:
+        range: string
+      PraequalifiziertFuerRegelenergie:
+        range: string
+      GenMastrNummer:
+        range: string
+      Netzbetreiberzuordnungen:
+        range: string
+      ReserveartNachDemEnWG:
+        range: string
+      DatumUeberfuehrungInReserve:
+        range: string
+      Hausnummer_nv:
+        range: string
+      Weic_nv:
+        range: string
+      Kraftwerksnummer_nv:
+        range: string
+      DatenQuelle:
+        range: string
+      DatumDownload:
+        range: string
+      GebietNachDemFlaechenentwicklungsplanNordsee:
+        range: string
+      GebietNachDemFlaechenentwicklungsplanOstsee:
+        range: string
+prefixes: {}
+

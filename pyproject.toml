@@ -1,0 +1,16 @@
+[project]
+name = "mastr-cim"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "gen-linkml-profile",
+    "linkml>=1.9.3",
+    "linkml-map>=0.3.9",
+    "open-mastr>=0.16.1",
+    "pandas>=3.0.0",
+]
+
+[tool.uv.sources]
+gen-linkml-profile = { git = "https://github.com/Netbeheer-Nederland/gen-linkml-profile.git" }
