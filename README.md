@@ -1,5 +1,9 @@
 # Mapping Marktstammdatenregister data to the Common Information Model (CIM) from IEC
 
+> [!WARNING]
+> This is Work in Progress
+   
+
 This repository transforms German energy data from the [Marktstammdatenregister (MaStR)](https://www.marktstammdatenregister.de/) into the [Common Information Model (CIM)](https://en.wikipedia.org/wiki/Common_Information_Model_(electricity)) standard from IEC TC57. In its first version, this repo only converts a small fraction of wind turbine attributes data into csv, but other generation types, attributes, and data formats could be also derived in future versions.
 
 ## What it does
